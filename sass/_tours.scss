@@ -1,0 +1,129 @@
+.tours{
+    background-color: $colorPrimario;
+    h2{
+       @include subtitulo;
+    }
+    h3{
+        @include subtitulo-h3;
+    }
+}
+.card{
+    height: 40rem;
+    background-color: $colorPrimario;
+    border: none;
+    font-size: 1rem;    
+    perspective: 150rem;
+    position: relative;
+    .card-info{
+        position: absolute;
+        backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(black, .5);
+        border-radius: 30px 0 30px 0;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 1s;
+        &.lado-1{
+            background-color: $colorCuarto;
+            color: $colorPrimario;
+            border-radius: 30px 0 30px 0;           
+        }
+        &.lado-2{
+            color: $colorSecundario;
+            border-radius: 0 30px 0 30px;
+            transform: rotateY(180deg);
+            .card-boton{
+                position: absolute;
+                top: 20%;
+                width: 90%;
+                text-align: center;
+                .card-precio{
+                    margin-bottom: 6rem;
+                }
+                .valor{
+                    font-size: 2rem;
+                }
+                .duracion{
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .card-img{
+            background-size: 100%;
+            background-blend-mode: overlay;
+            height: 15rem;
+            webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            
+        }
+        .img-1{
+            background-image: url(../css/img/ushuaia.jpg);
+        }
+        .img-2{
+            background-image: url(../css/img/estepa.jpg);
+        }
+        .img-3{
+            background-image: url(../css/img/antartida.jpg);
+        }
+    }
+    .card-titulo{
+        color: $colorPrimario;
+        font-size: 2rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 22%;
+        right: 0%;
+        width: 80%;
+        text-align: right;
+        padding: 1rem 1.5rem;
+    }
+    .titulo-1{
+        background-image: linear-gradient(to right bottom, rgba(#bcbaa4, .5), rgba(#bcbaa4, .7) );
+    }
+    .titulo-2{
+        background-image: linear-gradient(to right bottom, rgba(#bcaea4, .5), rgba(#bcaea4, .7) );
+    }
+    .titulo-3{
+        background-image: linear-gradient(to right bottom, rgba(#b8a4bc, .5), rgba(#b8a4bc, .7) );
+    }
+    .card-list{
+        text-align: center;
+        ul{
+            list-style: none;
+            width: 90%;
+            margin: 0 auto;
+            li {
+                text-align: center;
+                text-transform: uppercase;
+                color: $colorSecundario;
+                padding: 2rem;
+                &:not(:last-child){
+                    border-bottom: 1px solid $colorPrimario;
+                }
+            }  
+            
+            }
+                             
+        }
+    }
+    .ushuaia{
+        background-image: linear-gradient(to right bottom, rgba($colorSecundario, .4), rgba(#bcbaa4, .9) );;
+    }
+    .estepa{
+        background-image: linear-gradient(to right bottom, rgba($colorSecundario, .4), rgba(#bcaea4, .9) );
+    }
+    .antartida{
+        background-image: linear-gradient(to right bottom, rgba($colorSecundario, .4), rgba(#b8a4bc, .9) );
+    }
+.card:hover{
+    .lado-1{
+    transform: rotateY(-180deg);
+}}
+.card:hover{
+    .lado-2{
+    transform: rotateY(0);
+}}
+

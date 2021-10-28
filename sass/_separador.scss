@@ -1,0 +1,20 @@
+.curved {
+    position: relative;
+    background: $colorTerciario;
+    opacity: .6;
+    height: 4rem;
+  }
+  
+  .curved:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -47%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 4rem;
+    background-size: 30px 100%;
+    background-image: linear-gradient(135deg, $colorTerciario 25%, transparent 25%), linear-gradient(225deg, $colorTerciario 25%, transparent 25%);
+    background-position: 0 0;
+  }

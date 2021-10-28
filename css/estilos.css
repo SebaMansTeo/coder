@@ -1,0 +1,478 @@
+/*VARIABLES*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  background-color: #dbe4e5;
+  font-size: 100%;
+  text-rendering: optimizeLegibility; }
+
+body {
+  background-color: #dbe4e5;
+  font-family: 'Kaisei Tokumin', 'arial', serif; }
+
+.curved {
+  position: relative;
+  background: #a4acbc;
+  opacity: .6;
+  height: 4rem; }
+
+.curved:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -47%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 4rem;
+  background-size: 30px 100%;
+  background-image: linear-gradient(135deg, #a4acbc 25%, transparent 25%), linear-gradient(225deg, #a4acbc 25%, transparent 25%);
+  background-position: 0 0; }
+
+.mainHeader {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(img/condor1.jpg);
+  background-size: cover; }
+  .mainHeader .headerBox {
+    padding-top: 5rem;
+    padding-left: 2rem; }
+    .mainHeader .headerBox h1 {
+      color: #dbe4e5;
+      font-size: 4rem;
+      margin-top: 2rem; }
+    .mainHeader .headerBox h2 {
+      font-size: 2rem;
+      color: #1b0a04;
+      width: 30%;
+      margin-bottom: 13rem;
+      text-align: left; }
+
+@media only screen and (max-width: 1200px) {
+  .mainHeader {
+    background-position: 25% 0; }
+    .mainHeader .headerBox h1 {
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+    .mainHeader .headerBox h2 {
+      font-size: 2rem;
+      margin-bottom: 20rem; } }
+
+@media only screen and (max-width: 767px) {
+  .mainHeader {
+    background-position: 25% 0; }
+    .mainHeader .headerBox h1 {
+      margin-top: 3rem;
+      margin-bottom: 3rem; }
+    .mainHeader .headerBox h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15rem; } }
+
+@media only screen and (max-width: 479px) {
+  .mainHeader {
+    background-size: 50%; }
+    .mainHeader .headerBox h1 {
+      font-size: 3.5rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem; }
+    .mainHeader .headerBox h2 {
+      font-size: 1.5rem;
+      color: white;
+      margin-bottom: 2rem; } }
+
+.experiencia {
+  margin-top: 5rem; }
+  .experiencia h2 {
+    color: #1b0a04;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    padding: .5rem; }
+
+.carousel-caption {
+  text-align: center; }
+  .carousel-caption h3 {
+    color: #1b0a04; }
+  .carousel-caption p {
+    color: #1b0a04; }
+
+.carouselImg {
+  filter: saturate(80%) contrast(80%);
+  opacity: .7; }
+
+.testimonios {
+  margin-top: 5rem;
+  margin-bottom: 0rem; }
+  .testimonios .testimonios__titulo {
+    color: #1b0a04;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    padding: .5rem; }
+
+.testimonios__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(img/birdwatching.jpg);
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .testimonios__grid .testimonios__grid--box {
+    text-align: left;
+    margin-top: 6rem; }
+    .testimonios__grid .testimonios__grid--box blockquote {
+      font-style: italic;
+      color: #dbe4e5;
+      padding: 2%;
+      line-height: 145%;
+      position: relative; }
+    .testimonios__grid .testimonios__grid--box blockquote:before {
+      content: "\201C";
+      font-size: 500%;
+      display: block;
+      position: absolute;
+      left: -5px;
+      top: -5px; }
+    .testimonios__grid .testimonios__grid--box cite {
+      display: block;
+      margin-top: 25px;
+      font-size: 90%;
+      color: #dbe4e5; }
+      .testimonios__grid .testimonios__grid--box cite img {
+        border-radius: 50%;
+        width: 30%;
+        height: 10%;
+        vertical-align: middle;
+        margin-right: 16px; }
+
+@media only screen and (max-width: 479px) {
+  .testimonios__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(img/birdwatching.jpg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1rem; }
+    .testimonios__grid .testimonios__grid--box {
+      margin-top: 3rem; } }
+
+.header-all {
+  height: 3rem;
+  opacity: 2; }
+
+.bio-main {
+  margin-top: 0;
+  margin-bottom: 0; }
+  .bio-main h2 {
+    color: #1b0a04;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    padding: .5rem; }
+  .bio-main h3 {
+    color: #1b0a04;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 2rem;
+    padding: .5rem; }
+
+.ambientes {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; }
+  .ambientes figure {
+    margin: 0.5rem;
+    background-color: #454035;
+    opacity: 0.6;
+    transition: all 2s; }
+  .ambientes figure:hover {
+    opacity: 1; }
+  .ambientes img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7; }
+  .ambientes article {
+    color: #dbe4e5;
+    text-align: center;
+    padding-bottom: 5px; }
+
+.aves {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  background-color: #dbe4e5; }
+  .aves h3 {
+    color: #1b0a04;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 2rem;
+    padding: .5rem; }
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .galeria .galeriaCol {
+    flex-basis: 30%;
+    margin: 0.5rem; }
+    .galeria .galeriaCol .galeriaImg {
+      width: 100%;
+      margin-top: 0.5rem;
+      overflow: hidden; }
+      .galeria .galeriaCol .galeriaImg img {
+        width: 100%;
+        height: auto;
+        filter: saturate(0%) brightness(100%) contrast(100%);
+        transition: all 2s; }
+      .galeria .galeriaCol .galeriaImg img:hover {
+        filter: none;
+        transform: scale(1.25); }
+
+.tours {
+  background-color: #dbe4e5; }
+  .tours h2 {
+    color: #1b0a04;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    padding: .5rem; }
+  .tours h3 {
+    color: #1b0a04;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 2rem;
+    padding: .5rem; }
+
+.card {
+  height: 40rem;
+  background-color: #dbe4e5;
+  border: none;
+  font-size: 1rem;
+  perspective: 150rem;
+  position: relative; }
+  .card .card-info {
+    position: absolute;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+    border-radius: 30px 0 30px 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s; }
+    .card .card-info.lado-1 {
+      background-color: #646c84;
+      color: #dbe4e5;
+      border-radius: 30px 0 30px 0; }
+    .card .card-info.lado-2 {
+      color: #1b0a04;
+      border-radius: 0 30px 0 30px;
+      transform: rotateY(180deg); }
+      .card .card-info.lado-2 .card-boton {
+        position: absolute;
+        top: 20%;
+        width: 90%;
+        text-align: center; }
+        .card .card-info.lado-2 .card-boton .card-precio {
+          margin-bottom: 6rem; }
+        .card .card-info.lado-2 .card-boton .valor {
+          font-size: 2rem; }
+        .card .card-info.lado-2 .card-boton .duracion {
+          font-size: 1rem;
+          text-transform: uppercase; }
+    .card .card-info .card-img {
+      background-size: 100%;
+      background-blend-mode: overlay;
+      height: 15rem;
+      webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+    .card .card-info .img-1 {
+      background-image: url(../css/img/ushuaia.jpg); }
+    .card .card-info .img-2 {
+      background-image: url(../css/img/estepa.jpg); }
+    .card .card-info .img-3 {
+      background-image: url(../css/img/antartida.jpg); }
+  .card .card-titulo {
+    color: #dbe4e5;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 22%;
+    right: 0%;
+    width: 80%;
+    text-align: right;
+    padding: 1rem 1.5rem; }
+  .card .titulo-1 {
+    background-image: linear-gradient(to right bottom, rgba(188, 186, 164, 0.5), rgba(188, 186, 164, 0.7)); }
+  .card .titulo-2 {
+    background-image: linear-gradient(to right bottom, rgba(188, 174, 164, 0.5), rgba(188, 174, 164, 0.7)); }
+  .card .titulo-3 {
+    background-image: linear-gradient(to right bottom, rgba(184, 164, 188, 0.5), rgba(184, 164, 188, 0.7)); }
+  .card .card-list {
+    text-align: center; }
+    .card .card-list ul {
+      list-style: none;
+      width: 90%;
+      margin: 0 auto; }
+      .card .card-list ul li {
+        text-align: center;
+        text-transform: uppercase;
+        color: #1b0a04;
+        padding: 2rem; }
+        .card .card-list ul li:not(:last-child) {
+          border-bottom: 1px solid #dbe4e5; }
+
+.ushuaia {
+  background-image: linear-gradient(to right bottom, rgba(27, 10, 4, 0.4), rgba(188, 186, 164, 0.9)); }
+
+.estepa {
+  background-image: linear-gradient(to right bottom, rgba(27, 10, 4, 0.4), rgba(188, 174, 164, 0.9)); }
+
+.antartida {
+  background-image: linear-gradient(to right bottom, rgba(27, 10, 4, 0.4), rgba(184, 164, 188, 0.9)); }
+
+.card:hover .lado-1 {
+  transform: rotateY(-180deg); }
+
+.card:hover .lado-2 {
+  transform: rotateY(0); }
+
+.colaboradores {
+  margin-bottom: 2rem; }
+  .colaboradores h2 {
+    color: #1b0a04;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    padding: .5rem; }
+
+.empresas {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center; }
+  .empresas img {
+    border-radius: 1rem;
+    width: 65%;
+    height: 80%; }
+
+.contacto {
+  margin-top: 2rem; }
+  .contacto h2 {
+    color: #1b0a04;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    padding: .5rem; }
+  .contacto h3 {
+    color: #1b0a04;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 2rem;
+    padding: .5rem; }
+
+.contact-wrapper {
+  padding: 1rem; }
+
+.contacto-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .contacto-form form label {
+    display: block; }
+  .contacto-form form p {
+    margin: 0;
+    padding: 1em; }
+  .contacto-form form .block {
+    grid-column: 1 / 3; }
+  .contacto-form form input, .contacto-form form button, .contacto-form form textarea {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #1b0a04;
+    border-bottom: 1px solid #646c84; }
+  .contacto-form form button {
+    background: #1b0a04;
+    color: #dbe4e5;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1rem;
+    width: 75%; }
+  .contacto-form form button:hover,
+  .contacto-form form button:focus {
+    background: #646c84;
+    color: #dbe4e5;
+    transition: background-color 1s ease-out;
+    outline: 0; }
+
+footer {
+  background-color: #1b0a04;
+  color: white; }
+  footer nav {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+  footer p {
+    text-align: center;
+    margin-top: 1rem; }
+
+.footer-nav-menu ul {
+  float: right;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem; }
+  .footer-nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1.5rem;
+    font-size: 1rem; }
+    .footer-nav-menu ul li a:link,
+    .footer-nav-menu ul li a:visited {
+      color: white;
+      text-decoration: none;
+      transition: color 0.2s; }
+    .footer-nav-menu ul li a:hover,
+    .footer-nav-menu ul li a:active {
+      color: #646c84; }
+
+.footer-nav-social ul {
+  float: left;
+  margin-top: 1.5rem; }
+  .footer-nav-social ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 1.5rem;
+    font-size: 1.5rem; }
+    .footer-nav-social ul li a:link,
+    .footer-nav-social ul li a:visited {
+      color: white;
+      text-decoration: none;
+      transition: color 0.2s; }
+
+.fa-facebook-f:hover {
+  color: #3b5998; }
+
+.fa-twitter:hover {
+  color: #00aced; }
+
+.fa-instagram:hover {
+  color: #517fa4; }
+
+.fa-google-plus-g:hover {
+  color: #dd4b39; }

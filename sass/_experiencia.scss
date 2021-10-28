@@ -1,0 +1,28 @@
+.experiencia{
+    margin-top: 5rem;
+    h2{
+        @include subtitulo;        
+    }
+    
+        
+}
+.carousel-caption{
+    text-align: center;
+    h3{
+        color: $colorSecundario;
+    }
+    p{
+        color: $colorSecundario;
+    }
+}
+.carouselImg{
+    filter: saturate(80%) contrast(80%);
+    opacity: .7;
+}
+
+
+
+
+
+
+

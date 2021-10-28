@@ -1,0 +1,34 @@
+/*VARIABLES*/
+$colorPrimario: #dbe4e5;
+$colorSecundario: #1b0a04;
+$colorTerciario: #a4acbc;
+$colorCuarto: #646c84;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: $colorPrimario;
+    font-size: 100%;
+    text-rendering: optimizeLegibility;    
+}
+body{
+    
+    background-color: $colorPrimario;
+    font-family: 'Kaisei Tokumin', 'arial', serif;
+}
+
+@import "mixins";
+@import "separador";
+@import "main-header";
+@import "experiencia";
+@import "testimonios";
+@import "biodiversidad";
+@import "tours";
+@import "colaboradores";
+@import "contactanos";
+@import "footer";
+@import "typing";

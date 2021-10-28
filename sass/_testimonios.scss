@@ -1,0 +1,68 @@
+.testimonios{
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+    .testimonios__titulo{
+        @include subtitulo;
+    }
+    
+}
+.testimonios__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(img/birdwatching.jpg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .testimonios__grid--box{
+        text-align: left;
+        margin-top: 6rem;
+        blockquote{
+            font-style: italic;
+            color: $colorPrimario;
+            padding: 2%;
+            line-height: 145%;
+            position: relative;
+        }
+        blockquote:before{
+            content:"\201C";
+            font-size: 500%;
+            display: block;
+            position: absolute;
+            left: -5px;
+            top: -5px;
+        }
+        cite{
+            display: block;
+            margin-top: 25px;
+            font-size: 90%;
+            color: $colorPrimario;
+            img{
+                border-radius: 50%;
+                width: 30%;
+                height: 10%;
+                vertical-align: middle;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px){
+    
+}
+@media only screen and (max-width: 767px){
+    
+}
+@media only screen and (max-width: 479px){
+    .testimonios__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(img/birdwatching.jpg);
+        text-align: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 1rem;
+        .testimonios__grid--box {
+            margin-top: 3rem;
+        }
+    }
+}
