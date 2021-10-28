@@ -15,11 +15,11 @@
     background-attachment: fixed;
     .testimonios__grid--box{
         text-align: left;
-        margin-top: 6rem;
+        margin-top: 4rem;
         blockquote{
             font-style: italic;
             color: $colorPrimario;
-            padding: 2%;
+            padding: 1rem;
             line-height: 145%;
             position: relative;
         }
@@ -28,7 +28,7 @@
             font-size: 500%;
             display: block;
             position: absolute;
-            left: -5px;
+            left: -3px;
             top: -5px;
         }
         cite{
@@ -41,16 +41,41 @@
                 width: 30%;
                 height: 10%;
                 vertical-align: middle;
-                margin-right: 16px;
+                margin-right: 1rem;
+                padding: 1rem;
             }
         }
     }
 }
 @media only screen and (max-width: 1200px){
-    
+    .testimonios__grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(img/birdwatching.jpg);
+        text-align: center;
+        background-size: cover;
+        background-attachment: fixed;
+        .testimonios__grid--box{
+            text-align: left;
+            margin-top: 4rem;
+        }
+        }
 }
-@media only screen and (max-width: 767px){
     
+@media only screen and (max-width: 767px){
+    .testimonios__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(img/birdwatching.jpg);
+        text-align: center;
+        background-size: cover;
+        background-position: 50%;
+        background-attachment: fixed;
+        padding: 1rem;
+        .testimonios__grid--box {
+            margin-top: 3rem;
+        }
+    }
 }
 @media only screen and (max-width: 479px){
     .testimonios__grid{
