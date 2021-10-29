@@ -5,10 +5,11 @@ footer{
     display: grid;
     grid-template-columns: 50% 50%;
     }
-    p{
-        text-align: center;
-        margin-top: 1rem;
-    }  
+}
+.footerPara{
+    margin-top: 1rem;
+    text-align: center;
+    
 }
 .footer-nav-menu ul{
     float: right;
@@ -64,3 +65,64 @@ footer{
     color: #dd4b39;
 }
 
+@media only screen and (max-width: 1200px){
+    
+}
+    
+@media only screen and (max-width: 767px){
+    
+}
+@media only screen and (max-width: 479px){
+    footer{
+        background-color: $colorSecundario;
+        color: white;  
+        nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        }
+         
+    }
+    .footer-nav-social ul{
+        margin-top: 1.5rem;
+        padding: 0 2rem 0 1rem;        
+        li{
+            list-style: none;
+            display: inline-block;
+            font-size: 1.5rem;
+            a:link,
+            a:visited{
+                color: white;
+                text-decoration: none;
+                transition:color 0.2s;    
+            } 
+        }
+    }
+    .footer-nav-menu ul{
+        margin-top: 1rem;
+        text-align: center;
+        li{
+            list-style: none;
+            display: block;
+            font-size: 1rem;
+            padding: .5rem;
+            a:link,
+            a:visited
+                {color: white;
+                text-decoration: none;
+                transition:color 0.2s;    
+                }
+                a:hover,
+                a:active{
+                    color: $colorCuarto;
+                }  
+        }
+    }
+    .footerPara{
+        margin-top: 0;
+        text-align: center;
+        p{
+            padding: 0;
+        }
+    }
+}

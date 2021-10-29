@@ -34,12 +34,12 @@ body {
 
 .mainHeader {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(img/condor1.jpg);
   background-size: cover; }
   .mainHeader .headerBox {
-    padding-top: 5rem;
-    padding-left: 2rem; }
+    margin-top: 2rem;
+    padding: 2rem; }
     .mainHeader .headerBox h1 {
       color: #dbe4e5;
       font-size: 4rem;
@@ -54,34 +54,40 @@ body {
 @media only screen and (max-width: 1200px) {
   .mainHeader {
     background-position: 25% 0; }
-    .mainHeader .headerBox h1 {
-      margin-top: 3rem;
-      margin-bottom: 3rem; }
-    .mainHeader .headerBox h2 {
-      font-size: 2rem;
-      margin-bottom: 20rem; } }
+    .mainHeader .headerBox {
+      padding: 2rem; }
+      .mainHeader .headerBox h1 {
+        margin-top: 3rem;
+        margin-bottom: 3rem; }
+      .mainHeader .headerBox h2 {
+        font-size: 2rem;
+        margin-bottom: 20rem; } }
 
 @media only screen and (max-width: 767px) {
   .mainHeader {
     background-position: 25% 0; }
-    .mainHeader .headerBox h1 {
-      margin-top: 3rem;
-      margin-bottom: 3rem; }
-    .mainHeader .headerBox h2 {
-      font-size: 1.5rem;
-      margin-bottom: 15rem; } }
+    .mainHeader .headerBox {
+      padding: 2rem; }
+      .mainHeader .headerBox h1 {
+        margin-top: 3rem;
+        margin-bottom: 3rem; }
+      .mainHeader .headerBox h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15rem; } }
 
 @media only screen and (max-width: 479px) {
   .mainHeader {
     background-size: 50%; }
-    .mainHeader .headerBox h1 {
-      font-size: 3.5rem;
-      margin-top: 4rem;
-      margin-bottom: 4rem; }
-    .mainHeader .headerBox h2 {
-      font-size: 1.5rem;
-      color: white;
-      margin-bottom: 2rem; } }
+    .mainHeader .headerBox {
+      padding: 2rem; }
+      .mainHeader .headerBox h1 {
+        font-size: 3.5rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem; }
+      .mainHeader .headerBox h2 {
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 2rem; } }
 
 .experiencia {
   margin-top: 5rem; }
@@ -455,9 +461,10 @@ footer {
   footer nav {
     display: grid;
     grid-template-columns: 50% 50%; }
-  footer p {
-    text-align: center;
-    margin-top: 1rem; }
+
+.footerPara {
+  margin-top: 1rem;
+  text-align: center; }
 
 .footer-nav-menu ul {
   float: right;
@@ -502,3 +509,45 @@ footer {
 
 .fa-google-plus-g:hover {
   color: #dd4b39; }
+
+@media only screen and (max-width: 479px) {
+  footer {
+    background-color: #1b0a04;
+    color: white; }
+    footer nav {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center; }
+  .footer-nav-social ul {
+    margin-top: 1.5rem;
+    padding: 0 2rem 0 1rem; }
+    .footer-nav-social ul li {
+      list-style: none;
+      display: inline-block;
+      font-size: 1.5rem; }
+      .footer-nav-social ul li a:link,
+      .footer-nav-social ul li a:visited {
+        color: white;
+        text-decoration: none;
+        transition: color 0.2s; }
+  .footer-nav-menu ul {
+    margin-top: 1rem;
+    text-align: center; }
+    .footer-nav-menu ul li {
+      list-style: none;
+      display: block;
+      font-size: 1rem;
+      padding: .5rem; }
+      .footer-nav-menu ul li a:link,
+      .footer-nav-menu ul li a:visited {
+        color: white;
+        text-decoration: none;
+        transition: color 0.2s; }
+      .footer-nav-menu ul li a:hover,
+      .footer-nav-menu ul li a:active {
+        color: #646c84; }
+  .footerPara {
+    margin-top: 0;
+    text-align: center; }
+    .footerPara p {
+      padding: 0; } }
