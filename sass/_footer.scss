@@ -66,16 +66,19 @@ footer{
 }
 
 @media only screen and (max-width: 1200px){
-    
+    .footer-nav-menu ul{
+        margin-right: .5rem;
+        margin-top: 1.5rem;
+        li{
+            list-style: none;
+            display: inline-block;
+            margin-right: .5rem;  
+        }
+    } 
 }
     
 @media only screen and (max-width: 767px){
-    
-}
-@media only screen and (max-width: 479px){
     footer{
-        background-color: $colorSecundario;
-        color: white;  
         nav{
         display: grid;
         grid-template-columns: 1fr;
@@ -89,13 +92,6 @@ footer{
         li{
             list-style: none;
             display: inline-block;
-            font-size: 1.5rem;
-            a:link,
-            a:visited{
-                color: white;
-                text-decoration: none;
-                transition:color 0.2s;    
-            } 
         }
     }
     .footer-nav-menu ul{
@@ -106,16 +102,42 @@ footer{
             display: block;
             font-size: 1rem;
             padding: .5rem;
-            a:link,
-            a:visited
-                {color: white;
-                text-decoration: none;
-                transition:color 0.2s;    
-                }
-                a:hover,
-                a:active{
-                    color: $colorCuarto;
-                }  
+        }
+    }
+    .footerPara{
+        margin-top: 0;
+        text-align: center;
+        p{
+            padding: 0;
+        }
+    }
+}
+ 
+@media only screen and (max-width: 479px){
+    footer{
+        nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        }
+         
+    }
+    .footer-nav-social ul{
+        margin-top: 1.5rem;
+        padding: 0 2rem 0 1rem;        
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+    }
+    .footer-nav-menu ul{
+        margin-top: 1rem;
+        text-align: center;
+        li{
+            list-style: none;
+            display: block;
+            font-size: 1rem;
+            padding: .5rem;
         }
     }
     .footerPara{

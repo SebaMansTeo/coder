@@ -213,8 +213,8 @@ body {
     font-size: 1.5rem;
     text-align: center;
     font-weight: 200;
-    margin-top: 2rem;
-    padding: .5rem; }
+    margin-top: 0rem;
+    padding: 0rem; }
 
 .ambientes {
   margin-bottom: 2rem;
@@ -239,7 +239,7 @@ body {
     padding-bottom: 5px; }
 
 .aves {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: #dbe4e5; }
   .aves h3 {
@@ -247,8 +247,8 @@ body {
     font-size: 1.5rem;
     text-align: center;
     font-weight: 200;
-    margin-top: 2rem;
-    padding: .5rem; }
+    margin-top: 0rem;
+    padding: 0rem; }
 
 .galeria {
   display: flex;
@@ -270,6 +270,18 @@ body {
         filter: none;
         transform: scale(1.25); }
 
+@media only screen and (max-width: 479px) {
+  .ambientes {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem; }
+  .galeria {
+    display: block;
+    justify-content: center;
+    align-items: center; } }
+
 .tours {
   background-color: #dbe4e5; }
   .tours h2 {
@@ -284,8 +296,8 @@ body {
     font-size: 1.5rem;
     text-align: center;
     font-weight: 200;
-    margin-top: 2rem;
-    padding: .5rem; }
+    margin-top: 0rem;
+    padding: 0rem; }
 
 .card {
   height: 40rem;
@@ -417,8 +429,8 @@ body {
     font-size: 1.5rem;
     text-align: center;
     font-weight: 200;
-    margin-top: 2rem;
-    padding: .5rem; }
+    margin-top: 0rem;
+    padding: 0rem; }
 
 .contact-wrapper {
   padding: 1rem; }
@@ -510,26 +522,26 @@ footer {
 .fa-google-plus-g:hover {
   color: #dd4b39; }
 
-@media only screen and (max-width: 479px) {
-  footer {
-    background-color: #1b0a04;
-    color: white; }
-    footer nav {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center; }
+@media only screen and (max-width: 1200px) {
+  .footer-nav-menu ul {
+    margin-right: .5rem;
+    margin-top: 1.5rem; }
+    .footer-nav-menu ul li {
+      list-style: none;
+      display: inline-block;
+      margin-right: .5rem; } }
+
+@media only screen and (max-width: 767px) {
+  footer nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
   .footer-nav-social ul {
     margin-top: 1.5rem;
     padding: 0 2rem 0 1rem; }
     .footer-nav-social ul li {
       list-style: none;
-      display: inline-block;
-      font-size: 1.5rem; }
-      .footer-nav-social ul li a:link,
-      .footer-nav-social ul li a:visited {
-        color: white;
-        text-decoration: none;
-        transition: color 0.2s; }
+      display: inline-block; }
   .footer-nav-menu ul {
     margin-top: 1rem;
     text-align: center; }
@@ -538,14 +550,31 @@ footer {
       display: block;
       font-size: 1rem;
       padding: .5rem; }
-      .footer-nav-menu ul li a:link,
-      .footer-nav-menu ul li a:visited {
-        color: white;
-        text-decoration: none;
-        transition: color 0.2s; }
-      .footer-nav-menu ul li a:hover,
-      .footer-nav-menu ul li a:active {
-        color: #646c84; }
+  .footerPara {
+    margin-top: 0;
+    text-align: center; }
+    .footerPara p {
+      padding: 0; } }
+
+@media only screen and (max-width: 479px) {
+  footer nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .footer-nav-social ul {
+    margin-top: 1.5rem;
+    padding: 0 2rem 0 1rem; }
+    .footer-nav-social ul li {
+      list-style: none;
+      display: inline-block; }
+  .footer-nav-menu ul {
+    margin-top: 1rem;
+    text-align: center; }
+    .footer-nav-menu ul li {
+      list-style: none;
+      display: block;
+      font-size: 1rem;
+      padding: .5rem; }
   .footerPara {
     margin-top: 0;
     text-align: center; }
