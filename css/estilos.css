@@ -280,7 +280,8 @@ body {
   .galeria {
     display: block;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    padding: 1rem; } }
 
 .tours {
   background-color: #dbe4e5; }
