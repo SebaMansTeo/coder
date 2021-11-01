@@ -15,3 +15,21 @@
     margin-top: 0rem;
     padding: 0rem;
 }
+
+@mixin botonPrincipal {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 10rem;
+    padding: 1rem;
+    color: $colorPrimario;
+    background-size: 250%;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $ctaColor 50%);
+    transition: all .6s;
+}
+
+@mixin botonPrincipalHover {
+    background-position: 100%;
+    color: $colorSecundario;
+    transform: translateX(.8rem);
+}

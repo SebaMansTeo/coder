@@ -19,6 +19,15 @@
         text-align: left;
     }   
     }
+    .headerBoton:link,
+    .headerBoton:visited{
+        @include botonPrincipal;
+    }
+    .headerBoton:hover,
+    .headerBoton:active{
+        @include botonPrincipalHover;
+    }
+
 }
 
 
