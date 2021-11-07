@@ -10,9 +10,25 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     text-align: center;
+    p{
+        opacity: 0;
+        text-transform: uppercase;
+        padding: .5rem;
+        transition: all .6s;
+    }
     img{
-        border-radius: 1rem;
+        padding: .5rem;
+        border-radius: 1.5rem;
         width: 65%;
         height: 80%;
+        transition: all .6s;
+    }
+    img:hover{
+        transform: scale(1.25);
+        box-shadow: 0 .5rem .5rem rgba(black, .4);
+    }
+    img:hover + p{
+        opacity: 1;
+        transform: translateY(1.5rem);
     }
 }

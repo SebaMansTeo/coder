@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
     <link rel="manifest" href="../favicon/site.webmanifest">
-    <title>Tierra del Fuego - Contactanos</title>
+    <title>Tierra del Fuego - Contáctanos</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="background: linear-gradient(rgb(48, 45, 45), #dbe4e5);">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html">
-                <img src="../img/LOGO.png" alt="" width="50" height="50">
+                <img src="../img/LOGO.png" alt="logo" width="50" height="50">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
                   <a class="nav-link" style="color: #dbe4e5;" href="../index.html">HOME</a>
                   <a class="nav-link" style="color: #dbe4e5;" href="./biodiversidad.html">BIODIVERSIDAD</a>
                   <a class="nav-link" style="color: #dbe4e5;" href="./tours.html">TOURS</a>
-                  <a class="nav-link active" aria-current="page" style="color: #1b0a04; border-bottom: 2px solid #f5eb29;" href="./contactanos.html">CONTACTANOS</a>
+                  <a class="nav-link active" aria-current="page" style="color: #1b0a04; border-bottom: 2px solid #f5eb29;" href="./contactanos.html">CONTÁCTANOS</a>
                 </div>
               </div>
             </div>
@@ -49,27 +49,35 @@
       <div class="empresas">
         <div class="empresas-1">
           <img src="../img/zeiss.png" alt="carlzeiss">
+          <p>Carl Zeiss</p>
         </div>
         <div class="empresas-2">
-          <img src="../img/ebird.png" alt="carlzeiss">
+          <img src="../img/ebird.png" alt="ebird">
+          <p>Ebird</p>
         </div>
         <div class="empresas-3">
-          <img src="../img/patagonia.png" alt="carlzeiss">
+          <img src="../img/patagonia.png" alt="patagonia">
+          <p>Patagonia</p>
         </div>
         <div class="empresas-4">
-          <img src="../img/landrover.png" alt="carlzeiss">
+          <img src="../img/landrover.png" alt="landrover">
+          <p>Landrover</p>
         </div>
         <div class="empresas-5">
-          <img src="../img/birdingexp.png" alt="carlzeiss">
+          <img src="../img/birdingexp.png" alt="birdingexp">
+          <p>Birding Experience</p>
         </div>
         <div class="empresas-6">
-          <img src="../img/wildlife.png" alt="carlzeiss">
+          <img src="../img/wildlife.png" alt="wildlife">
+          <p>Wildlife</p>
         </div>
         <div class="empresas-7">
-          <img src="../img/nikkon.png" alt="carlzeiss">
+          <img src="../img/nikkon.png" alt="nikkon">
+          <p>Nikkon</p>
         </div>
         <div class="empresas-8">
-          <img src="../img/birdingpat.png" alt="carlzeiss">
+          <img src="../img/birdingpat.png" alt="birdingpat">
+          <p>Birding Patagonia</p>
         </div>
       </div>
     </section>
@@ -78,35 +86,35 @@
     </svg>
     <section class="contacto">
       <h2>Haz tu consulta</h2>
-      <h3>Cuéntanos cuales son tus intereses, que aves quieres ver, de que ambientes, en que época del año; de esa forma podremos asesorate mejor!</h3>
-            <div class="contact-wrapper">
-              <div class="contacto-form">
+      <h3>Cuéntanos cuáles son tus intereses, qué aves quieres ver, de qué ambientes, en qué época del año; de esa forma podremos asesorate mejor!</h3>
+            <div class="formulario">
+              <div class="contactoForm">
                   <form action="">
-                      <p>
-                          <label>Nombre completo</label>
-                          <input type="text" name="fullname" required>
-                      </p>
-                      <p>
-                          <label>Email</label>
-                          <input type="email" name="email" required>
-                      </p>
-                      <p>
-                          <label>Whatsapp</label>
-                          <input type="text" name="phone" required>
-                      </p>
-                      <p>
-                          <label>Asunto</label>
-                          <input type="text" name="affair" required>
-                      </p>
-                      <p class="block">
-                         <label>Mensaje</label> 
-                          <textarea name="message" rows="3" required></textarea>
-                      </p>
-                      <p class="block">
-                          <button>
-                              Enviar
-                          </button>
-                      </p>
+                      <div>
+                        <input type="text" id="name" placeholder="Nombre Completo" required>
+                        <label for="name">Nombre completo</label>
+                      </div>
+                      <div>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <label for="email">Email</label>
+                      </div>
+                      <div>
+                        <input type="text" id="phone" placeholder="Whatsapp" required>
+                        <label for="phone">Whatsapp</label>
+                      </div>
+                      <div>
+                        <input type="text" id="affair" placeholder="Asunto" required>
+                        <label for="affair">Asunto</label>
+                      </div>
+                      <div class="mensaje">
+                        <div>
+                          <textarea name="message" rows="3" placeholder="Deja tu mensaje" required></textarea>
+                          <label>Mensaje</label>
+                        </div>
+                        <div>
+                          <button>Enviar</button>
+                        </div>
+                      </div>
                   </form>
               </div>
             </div>
@@ -115,22 +123,22 @@
       <nav class="footer-nav">
         <div class="footer-nav-social">
           <ul>
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li><a href="https://facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://instagram.com" target="blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://google.com" target="blank"><i class="fab fa-google-plus-g"></i></a></li>
           </ul>    
         </div>
           <div class="footer-nav-menu">
               <ul>
                   <li><a href="#">Sobre Nosotros</a></li>
                   <li><a href="#">Blog de Viajes</a></li>
-                  <li><a href="#">Contactanos</a></li>
+                  <li><a href="#">Contáctanos</a></li>
               </ul>
           </div>
       </nav>
       <div class="footerPara">
-        <p> &copy; Esta página ha sido creada por Seba MasnTeo, 2021 </p> 
+        <p> &copy; Esta página ha sido creada por Seba MansTeo, 2021 </p> 
         <p>Todos los derechos reservados</p>
       </div>    
   </footer>

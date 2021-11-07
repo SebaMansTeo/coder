@@ -8,46 +8,55 @@
     }
 }
 
-.contact-wrapper{
-    padding: 1rem;
+.formulario{
+    padding: .5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
-.contacto-form{
+.contactoForm{
     form{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     label{
         display: block;
+        margin-left: .5rem;
+        transition: all .6s;
     }
-    p{
-        margin: 0;
-        padding: 1em;
-    }
-    .block{
-        grid-column: 1 / 3;
+    div{
+        padding: 0 1rem;
     }
     input, button, textarea{
         width: 100%;
         padding: .5rem;
+        font-family: inherit;
         border: none;
         background: none;
         outline: 0;
         color: $colorSecundario;
         border-bottom: 1px solid $colorCuarto;
     }
-    button{
-        background: $colorSecundario;
-        color: $colorPrimario;
-        border: 0;
-        text-transform: uppercase;
-        padding: 1rem;
-        width: 75%;
+    input:placeholder-shown + label{
+        opacity: 0;
+        transform: translateY(-4rem);
     }
-    button:hover,
-    button:focus{
-        background: $colorCuarto;
-        color: $colorPrimario;
-        transition: background-color 1s ease-out;
-        outline: 0;
-    }
+    .mensaje{
+        grid-column: 1/3;  
+        display: grid;
+        justify-items: center;  
+        button{
+            @include botonPrincipal;
+            color: $colorSecundario;
+        }
+        button:hover,
+        button:focus{
+            @include botonPrincipalHover;
+        }
+                textarea:placeholder-shown + label{
+            opacity: 0;
+            transform: translateY(-4rem);
+        }
+        
+    }    
 }
 }
