@@ -1,19 +1,19 @@
 .testimonios{
     margin-top: 5rem;
     margin-bottom: 0rem;
-    .testimonios__titulo{
+    .testimoniosTitulo{
         @include subtitulo;
     }
     
 }
-.testimonios__grid{
+.testimoniosGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(img/birdwatching.jpg);
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
-    .testimonios__grid--box{
+    .testimoniosGridBox{
         text-align: left;
         margin-top: 4rem;
         blockquote{
@@ -48,14 +48,14 @@
     }
 }
 @media only screen and (max-width: 1200px){
-    .testimonios__grid{
+    .testimoniosGrid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(img/birdwatching.jpg);
         text-align: center;
         background-size: cover;
         background-attachment: fixed;
-        .testimonios__grid--box{
+        .testimoniosGridBox{
             text-align: left;
             margin-top: 4rem;
         }
@@ -63,7 +63,7 @@
 }
     
 @media only screen and (max-width: 767px){
-    .testimonios__grid{
+    .testimoniosGrid{
         display: grid;
         grid-template-columns: 1fr;
         background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(img/birdwatching.jpg);
@@ -72,13 +72,13 @@
         background-position: 50%;
         background-attachment: fixed;
         padding: 1rem;
-        .testimonios__grid--box {
+        .testimoniosGridBox {
             margin-top: 3rem;
         }
     }
 }
 @media only screen and (max-width: 479px){
-    .testimonios__grid{
+    .testimoniosGrid{
         display: grid;
         grid-template-columns: 1fr;
         background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .9)), url(img/birdwatching.jpg);
@@ -86,7 +86,7 @@
         background-size: cover;
         background-attachment: fixed;
         padding: 1rem;
-        .testimonios__grid--box {
+        .testimoniosGridBox {
             margin-top: 3rem;
         }
     }

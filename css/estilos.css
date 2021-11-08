@@ -77,11 +77,12 @@ body {
         margin-bottom: 3rem; }
       .mainHeader .headerBox h2 {
         font-size: 2rem;
-        margin-bottom: 20rem; } }
+        margin-bottom: 20rem;
+        color: #1b0a04; } }
 
 @media only screen and (max-width: 767px) {
   .mainHeader {
-    background-position: 25% 0; }
+    background-position: 5% 0; }
     .mainHeader .headerBox {
       padding: 2rem; }
       .mainHeader .headerBox h1 {
@@ -89,20 +90,21 @@ body {
         margin-bottom: 3rem; }
       .mainHeader .headerBox h2 {
         font-size: 1.5rem;
+        color: #dbe4e5;
         margin-bottom: 15rem; } }
 
 @media only screen and (max-width: 479px) {
   .mainHeader {
-    background-size: 50%; }
+    background-position: 25%; }
     .mainHeader .headerBox {
       padding: 2rem; }
       .mainHeader .headerBox h1 {
         font-size: 3.5rem;
         margin-top: 4rem;
-        margin-bottom: 4rem; }
+        margin-bottom: 5rem; }
       .mainHeader .headerBox h2 {
         font-size: 1.5rem;
-        color: white;
+        color: #1b0a04;
         margin-bottom: 2rem; } }
 
 .experiencia {
@@ -118,9 +120,11 @@ body {
 .carousel-caption {
   text-align: center; }
   .carousel-caption h3 {
-    color: #1b0a04; }
+    color: #1b0a04;
+    font-weight: 700; }
   .carousel-caption p {
-    color: #1b0a04; }
+    color: #1b0a04;
+    font-weight: 700; }
 
 .carouselImg {
   filter: saturate(80%) contrast(80%);
@@ -129,7 +133,7 @@ body {
 .testimonios {
   margin-top: 5rem;
   margin-bottom: 0rem; }
-  .testimonios .testimonios__titulo {
+  .testimonios .testimoniosTitulo {
     color: #1b0a04;
     text-align: center;
     font-size: 2rem;
@@ -137,35 +141,35 @@ body {
     margin-top: 2rem;
     padding: .5rem; }
 
-.testimonios__grid {
+.testimoniosGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(img/birdwatching.jpg);
   text-align: center;
   background-size: cover;
   background-attachment: fixed; }
-  .testimonios__grid .testimonios__grid--box {
+  .testimoniosGrid .testimoniosGridBox {
     text-align: left;
     margin-top: 4rem; }
-    .testimonios__grid .testimonios__grid--box blockquote {
+    .testimoniosGrid .testimoniosGridBox blockquote {
       font-style: italic;
       color: #dbe4e5;
       padding: 1rem;
       line-height: 145%;
       position: relative; }
-    .testimonios__grid .testimonios__grid--box blockquote:before {
+    .testimoniosGrid .testimoniosGridBox blockquote:before {
       content: "\201C";
       font-size: 500%;
       display: block;
       position: absolute;
       left: -3px;
       top: -5px; }
-    .testimonios__grid .testimonios__grid--box cite {
+    .testimoniosGrid .testimoniosGridBox cite {
       display: block;
       margin-top: 25px;
       font-size: 90%;
       color: #dbe4e5; }
-      .testimonios__grid .testimonios__grid--box cite img {
+      .testimoniosGrid .testimoniosGridBox cite img {
         border-radius: 50%;
         width: 30%;
         height: 10%;
@@ -174,19 +178,19 @@ body {
         padding: 1rem; }
 
 @media only screen and (max-width: 1200px) {
-  .testimonios__grid {
+  .testimoniosGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(img/birdwatching.jpg);
     text-align: center;
     background-size: cover;
     background-attachment: fixed; }
-    .testimonios__grid .testimonios__grid--box {
+    .testimoniosGrid .testimoniosGridBox {
       text-align: left;
       margin-top: 4rem; } }
 
 @media only screen and (max-width: 767px) {
-  .testimonios__grid {
+  .testimoniosGrid {
     display: grid;
     grid-template-columns: 1fr;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(img/birdwatching.jpg);
@@ -195,11 +199,11 @@ body {
     background-position: 50%;
     background-attachment: fixed;
     padding: 1rem; }
-    .testimonios__grid .testimonios__grid--box {
+    .testimoniosGrid .testimoniosGridBox {
       margin-top: 3rem; } }
 
 @media only screen and (max-width: 479px) {
-  .testimonios__grid {
+  .testimoniosGrid {
     display: grid;
     grid-template-columns: 1fr;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(img/birdwatching.jpg);
@@ -207,24 +211,24 @@ body {
     background-size: cover;
     background-attachment: fixed;
     padding: 1rem; }
-    .testimonios__grid .testimonios__grid--box {
+    .testimoniosGrid .testimoniosGridBox {
       margin-top: 3rem; } }
 
-.header-all {
+.headerAll {
   height: 3rem;
   opacity: 2; }
 
-.bio-main {
+.bioMain {
   margin-top: 0;
   margin-bottom: 0; }
-  .bio-main h2 {
+  .bioMain h2 {
     color: #1b0a04;
     text-align: center;
     font-size: 2rem;
     font-weight: 100;
     margin-top: 2rem;
     padding: .5rem; }
-  .bio-main h3 {
+  .bioMain h3 {
     color: #1b0a04;
     font-size: 1.5rem;
     text-align: center;
@@ -340,7 +344,7 @@ body {
   font-size: 1rem;
   perspective: 150rem;
   position: relative; }
-  .card .card-info {
+  .card .cardInfo {
     position: absolute;
     backface-visibility: hidden;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
@@ -351,24 +355,24 @@ body {
     width: 100%;
     height: 100%;
     transition: all 1s; }
-    .card .card-info.lado-1 {
+    .card .cardInfo.lado-1 {
       background-color: #646c84;
       color: #dbe4e5;
       border-radius: 30px 0 30px 0; }
-    .card .card-info.lado-2 {
+    .card .cardInfo.lado-2 {
       color: #1b0a04;
       border-radius: 0 30px 0 30px;
       transform: rotateY(180deg); }
-      .card .card-info.lado-2 .card-boton {
+      .card .cardInfo.lado-2 .cardBoton {
         position: absolute;
         top: 20%;
         width: 90%;
         text-align: center; }
-        .card .card-info.lado-2 .card-boton .boton {
+        .card .cardInfo.lado-2 .cardBoton .boton {
           position: relative;
           left: 30%;
           padding-top: 4rem; }
-        .card .card-info.lado-2 .card-boton a {
+        .card .cardInfo.lado-2 .cardBoton a {
           text-decoration: none;
           text-transform: uppercase;
           display: block;
@@ -380,31 +384,31 @@ body {
           transition: all .6s;
           color: #646c84;
           border-bottom: 1px solid #f5eb29; }
-        .card .card-info.lado-2 .card-boton a:hover {
+        .card .cardInfo.lado-2 .cardBoton a:hover {
           background-position: 100%;
           color: #1b0a04;
           transform: translateX(0.8rem);
           border-radius: 1rem; }
-        .card .card-info.lado-2 .card-boton .card-precio {
+        .card .cardInfo.lado-2 .cardBoton .cardPrecio {
           margin-bottom: 6rem; }
-        .card .card-info.lado-2 .card-boton .valor {
+        .card .cardInfo.lado-2 .cardBoton .valor {
           font-size: 2rem; }
-        .card .card-info.lado-2 .card-boton .duracion {
+        .card .cardInfo.lado-2 .cardBoton .duracion {
           font-size: 1rem;
           text-transform: uppercase; }
-    .card .card-info .card-img {
+    .card .cardInfo .cardImg {
       background-size: 100%;
       background-blend-mode: overlay;
       height: 15rem;
       webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
-    .card .card-info .img-1 {
+    .card .cardInfo .img-1 {
       background-image: url(../css/img/ushuaia.jpg); }
-    .card .card-info .img-2 {
+    .card .cardInfo .img-2 {
       background-image: url(../css/img/estepa.jpg); }
-    .card .card-info .img-3 {
+    .card .cardInfo .img-3 {
       background-image: url(../css/img/antartida.jpg); }
-  .card .card-titulo {
+  .card .cardTitulo {
     color: #dbe4e5;
     font-size: 2rem;
     text-transform: uppercase;
@@ -420,19 +424,19 @@ body {
     background-image: linear-gradient(to right bottom, rgba(188, 174, 164, 0.5), rgba(188, 174, 164, 0.7)); }
   .card .titulo-3 {
     background-image: linear-gradient(to right bottom, rgba(184, 164, 188, 0.5), rgba(184, 164, 188, 0.7)); }
-  .card .card-list {
+  .card .cardList {
     text-align: center; }
-    .card .card-list ul {
+    .card .cardList ul {
       list-style: none;
       width: 90%;
       margin: 0 auto; }
-      .card .card-list ul li {
+      .card .cardList ul li {
         text-align: center;
         text-transform: uppercase;
         color: #1b0a04;
         padding: 2rem; }
-        .card .card-list ul li:not(:last-child) {
-          border-bottom: 1px solid #dbe4e5; }
+        .card .cardList ul li:not(:last-child) {
+          border-bottom: 1px solid #f5eb29; }
 
 .ushuaia {
   background-image: linear-gradient(to right bottom, rgba(27, 10, 4, 0.4), rgba(188, 186, 164, 0.9)); }
@@ -453,7 +457,7 @@ body {
   .card {
     word-wrap: normal;
     font-size: .8rem; }
-    .card .card-titulo {
+    .card .cardTitulo {
       font-size: 1.5rem;
       text-align: left;
       padding: .5rem 1rem; } }
@@ -471,7 +475,7 @@ body {
     margin-bottom: 1rem; }
   .col {
     padding: 1rem; }
-    .col .card-info {
+    .col .cardInfo {
       position: absolute;
       backface-visibility: hidden; } }
 
@@ -509,6 +513,26 @@ body {
     opacity: 1;
     transform: translateY(1.5rem); }
 
+@media only screen and (max-width: 767px) {
+  .empresas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center; }
+    .empresas div {
+      margin: .5rem 0; }
+    .empresas img:hover {
+      transform: scale(1.15); } }
+
+@media only screen and (max-width: 479px) {
+  .empresas {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center; }
+    .empresas div {
+      margin: 0.5rem 0; }
+    .empresas img:hover {
+      transform: scale(1.15); } }
+
 .contacto {
   margin-top: 2rem; }
   .contacto h2 {
@@ -537,6 +561,9 @@ body {
   grid-template-rows: 1fr 1fr 1fr; }
   .contactoForm form label {
     display: block;
+    color: #a4acbc;
+    text-transform: uppercase;
+    font-weight: 700;
     margin-left: .5rem;
     transition: all .6s; }
   .contactoForm form div {
@@ -577,6 +604,26 @@ body {
       opacity: 0;
       transform: translateY(-4rem); }
 
+@media only screen and (max-width: 767px) {
+  .contacto h3 {
+    padding: .5rem; }
+  .contactoForm form {
+    display: block; }
+    .contactoForm form .mensaje {
+      display: contents; }
+    .contactoForm form input, .contactoForm form button, .contactoForm form textarea {
+      padding: 1rem; } }
+
+@media only screen and (max-width: 479px) {
+  .contacto h3 {
+    padding: .5rem; }
+  .contactoForm form {
+    display: block; }
+    .contactoForm form .mensaje {
+      display: contents; }
+    .contactoForm form input, .contactoForm form button, .contactoForm form textarea {
+      padding: 1rem; } }
+
 footer {
   background-color: #1b0a04;
   color: white; }
@@ -588,38 +635,37 @@ footer {
   margin-top: 1rem;
   text-align: center; }
 
-.footer-nav-menu ul {
+.footerNavMenu ul {
   float: right;
   margin-right: 1.5rem;
   margin-top: 1.5rem; }
-  .footer-nav-menu ul li {
+  .footerNavMenu ul li {
     list-style: none;
     display: inline-block;
     margin-right: 1.5rem;
     font-size: 1rem; }
-    .footer-nav-menu ul li a:link,
-    .footer-nav-menu ul li a:visited {
+    .footerNavMenu ul li a:link,
+    .footerNavMenu ul li a:visited {
       color: white;
       text-decoration: none;
       transition: all 0.8s; }
-    .footer-nav-menu ul li a:hover,
-    .footer-nav-menu ul li a:active {
+    .footerNavMenu ul li a:hover,
+    .footerNavMenu ul li a:active {
       color: #646c84;
       border-bottom: 1px solid #f5eb29; }
 
-.footer-nav-social ul {
+.footerNavSocial ul {
   float: left;
   margin-top: 1.5rem; }
-  .footer-nav-social ul li {
+  .footerNavSocial ul li {
     list-style: none;
     display: inline-block;
     margin-left: 1.5rem;
     font-size: 1.5rem; }
-    .footer-nav-social ul li a:link,
-    .footer-nav-social ul li a:visited {
+    .footerNavSocial ul li a:link,
+    .footerNavSocial ul li a:visited {
       color: white;
-      text-decoration: none;
-      transition: color 0.2s; }
+      text-decoration: none; }
 
 .fa-facebook-f:hover {
   color: #3b5998; }
@@ -634,10 +680,10 @@ footer {
   color: #dd4b39; }
 
 @media only screen and (max-width: 1200px) {
-  .footer-nav-menu ul {
+  .footerNavMenu ul {
     margin-right: .5rem;
     margin-top: 1.5rem; }
-    .footer-nav-menu ul li {
+    .footerNavMenu ul li {
       list-style: none;
       display: inline-block;
       margin-right: .5rem; } }
@@ -647,16 +693,16 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center; }
-  .footer-nav-social ul {
+  .footerNavSocial ul {
     margin-top: 1.5rem;
     padding: 0 2rem 0 1rem; }
-    .footer-nav-social ul li {
+    .footerNavSocial ul li {
       list-style: none;
       display: inline-block; }
-  .footer-nav-menu ul {
+  .footerNavMenu ul {
     margin-top: 1rem;
     text-align: center; }
-    .footer-nav-menu ul li {
+    .footerNavMenu ul li {
       list-style: none;
       display: block;
       font-size: 1rem;
@@ -672,16 +718,16 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center; }
-  .footer-nav-social ul {
+  .footerNavSocial ul {
     margin-top: 1.5rem;
     padding: 0 2rem 0 1rem; }
-    .footer-nav-social ul li {
+    .footerNavSocial ul li {
       list-style: none;
       display: inline-block; }
-  .footer-nav-menu ul {
+  .footerNavMenu ul {
     margin-top: 1rem;
     text-align: center; }
-    .footer-nav-menu ul li {
+    .footerNavMenu ul li {
       list-style: none;
       display: block;
       font-size: 1rem;
@@ -690,20 +736,4 @@ footer {
     margin-top: 0;
     text-align: center; }
     .footerPara p {
-      padding: 0; } }
-
-.whatsapp {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 40px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  z-index: 100; }
-
-.whatsapp-icon {
-  margin-top: 1rem; }
+      padding: 0.5rem; } }

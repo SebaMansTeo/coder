@@ -30,8 +30,6 @@
 
 }
 
-
-
 @media only screen and (max-width: 1200px){
     .mainHeader{
         background-position: 25% 0;
@@ -44,13 +42,14 @@
             h2{
                 font-size: 2rem;
                 margin-bottom: 20rem;
+                color: $colorSecundario;
             }
         }
     }
 }
 @media only screen and (max-width: 767px){
     .mainHeader{
-        background-position: 25% 0;
+        background-position: 5% 0;
         .headerBox{
             padding: 2rem;
             h1{
@@ -59,6 +58,7 @@
             }
             h2{
                 font-size: 1.5rem;
+                color: $colorPrimario;
                 margin-bottom: 15rem;
             }
         }
@@ -66,19 +66,18 @@
 }
 @media only screen and (max-width: 479px){
     .mainHeader{
-        background-size: 50%;
+        background-position: 25%;
         .headerBox{
             padding: 2rem;
             h1{
                 font-size: 3.5rem;
                 margin-top: 4rem;
-                margin-bottom: 4rem;
+                margin-bottom: 5rem;
             }
             h2{
                 font-size: 1.5rem;
-                color: white;
+                color: $colorSecundario;
                 margin-bottom: 2rem;
-                
             }
         }
     }
